@@ -1,0 +1,127 @@
+@import url('http://fonts.googleapis.com/css?family=Nunito');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Nunito", sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom right, #6624ff, #a781ff);
+}
+.form {
+	position: relative;
+	width: 350px;
+	padding: 40px 40px 60px;
+	background: #dfdfdf;
+	border-radius: 10px;
+	text-align: center;
+	border-radius: 45px;
+	background: linear-gradient(145deg, #efefef, #c9c9c9);
+	box-shadow: 14px 14px 28px #a781ff, -14px -14px 28px #6624ff;
+}
+.form .animated-form h3 {
+	color: #a8a8a8;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.animated-form h3 {
+	color: #666;
+	font-size: 28px;
+	font-weight: 500;
+	margin-bottom: 45px;
+}
+.animated-form .form-group {
+	position: relative;
+	display: flex;
+	margin-bottom: 45px;
+}
+.form-group.flex-end {
+	justify-content: flex-end;
+}
+.animated-form .form-group label {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	color: #aaa;
+	font-size: 20px;
+	transition: 0.4s ease-out;
+}
+.animated-form .form-group input {
+	display: block;
+	width: 100%;
+	padding: 10px 0px;
+	border: none;
+	outline: none;
+	background: none;
+	border-bottom: 3px solid #aaa;
+	color: #666;
+	font-size: 20px;
+	transition: 0.4s ease-out;
+}
+.animated-form .form-group:focus-within label,
+.animated-form .form-group.has-content label {
+	top: 0px;
+	transform: translateY(-100%);
+	color: #6624ff;
+}
+.animated-form .form-group:focus-within input,
+.animated-form .form-group.has-content input {
+	border-bottom-color: #6624ff;
+}
+.animated-form .form-group.flex-end {
+	margin-bottom: 25px;
+	justify-content: center;
+	align-items: center;
+}
+.animated-form .form-group .button {
+	display: inline-block;
+	width: auto;
+	padding: 15px 60px;
+	border: 3px solid #6624ff;
+	border-radius: 999px;
+	background-image: linear-gradient(to right, transparent 50%, #a781ff 50%, #6624ff);
+	box-shadow: 14px 14px 12px #8f8f8f, -14px -14px 12px #ffffff;
+	background-size: 200%;
+	color: #6624ff;
+	font-size: 24px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.animated-form .form-group .button:hover {
+	color: #fff;
+	background-position: 100%;
+	border: 3px solid rgb(218, 218, 218);
+}
+.animated-form .lost-password a {
+	color: #f81818;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	justify-content: center;
+	align-items: center;
+}
+.animated-form .lost-password a:hover {
+	border-bottom-color: #f81818;
+}
+.animated-form .signup a {
+	color: #f81818;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	justify-content: center;
+	align-items: center;
+}
+.animated-form .signup a:hover {
+	border-bottom-color: #f81818;
+}
